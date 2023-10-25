@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Popcorn.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Popcorn.js"></script>
+</head>
+<body>
+	<div class="container flex">
+		<div class="structure">
+		  <h1>Tickets Selection</h1>
+		  <p>ABCD<br>ACVD<br>akdmakda</p>
+		  <br>
+		  
+		  <table id="table">
+			<tbody id="all_products">
+				<th>Categories</th>
+				<th>Price</th>	
+				<th>Quantities</th>
+			  <tr>
+				<td>Adult</td>
+				<td>1.80</td>
+				<td>
+				  <div class="input-group w-auto justify-content-end align-items-center">
+					<input type="button" value="-" class="button-minus border rounded-circle icon-shape icon-sm mx-1" data-field="quantity" data-target="adult-quantity">
+					<input type="number" step="1" max="10" value="1" name="quantity" id="adult-quantity" class="quantity-field border-0 text-center w-25" readonly>
+					<input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm" data-field="quantity" data-target="adult-quantity">
+				  </div>
+				</td>
+			  </tr>
+			  <tr>
+				<td>Children</td>
+				<td>2.99</td>
+				<td>
+				  <div class="input-group w-auto justify-content-end align-items-center">
+					 <input type="button" value="-" class="button-minus border rounded-circle icon-shape icon-sm mx-1" data-field="quantity" data-target="children-quantity">
+					 <input type="number" step="1" max="10" value="1" name="quantity" id="children-quantity" class="quantity-field border-0 text-center w-25" readonly>
+					 <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm" data-field="quantity" data-target="children-quantity">
+				  </div>
+				</td>
+			  </tr>
+			  <tr>
+				<td>Senior Citizen</td>
+				<td>2.99</td>
+				<td>
+				  <div class="input-group w-auto justify-content-end align-items-center">
+					 <input type="button" value="-" class="button-minus border rounded-circle icon-shape icon-sm mx-1" data-field="quantity" data-target="senior-quantity">
+					 <input type="number" step="1" max="10" value="1" name="quantity" id="senior-quantity" class="quantity-field border-0 text-center w-25" readonly>
+					 <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm" data-field="quantity" data-target="senior-quantity">
+				  </div>
+				</td>
+			  </tr>
+			  <tr>
+				<td>OKU</td>
+				<td>2.99</td>
+				<td>
+				  <div class="input-group w-auto justify-content-end align-items-center">
+					 <input type="button" value="-" class="button-minus border rounded-circle icon-shape icon-sm mx-1" data-field="quantity" data-target="oku-quantity">
+					 <input type="number" step="1" max="10" value="1" name="quantity" id="oku-quantity" class="quantity-field border-0 text-center w-25" readonly>
+					 <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm" data-field="quantity" data-target="oku-quantity">
+				  </div>
+				</td>
+			  </tr>
+			</tbody>			
+		  </table>
+		  <h2>Total : <span id="total_display">10 tickets</span></h2>
+		</div>
+	  </div>
+</body>
+</html>
